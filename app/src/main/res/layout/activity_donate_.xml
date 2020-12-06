@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Donate_Activity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="Welcome \n&quot;Hunger's Heros&quot;"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textusername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="name"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etdonorname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:layout_marginBottom="12dp"
+                android:ems="10"
+                android:hint="EnterDonor's name"
+                android:inputType="textPersonName"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etfoodname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:ems="10"
+                android:hint="Enter food name"
+                android:inputType="textPersonName"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etquantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:ems="10"
+                android:hint="Enter Food Quantity"
+                android:inputType="textPersonName"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:ems="10"
+                android:hint="Enter donar's phone number"
+                android:inputType="phone"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:ems="10"
+                android:hint="Enter donor's emaiil"
+                android:inputType="textEmailAddress"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:ems="10"
+                android:hint="Enter Donation address"
+                android:inputType="textPostalAddress"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/loca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/setloc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/btn_gradient"
+                android:text="Set location" />
+
+            <Button
+                android:id="@+id/btndonate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/btn_gradient"
+                android:text="Donate" />
+
+
+        </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+    </LinearLayout>
+</LinearLayout>
