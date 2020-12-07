@@ -103,14 +103,33 @@ public class Donate_Activity extends AppCompatActivity {
                                     binding.etphone.getText().toString(),
                                     binding.etemail.getText().toString(),
                                     binding.etaddress.getText().toString(), lat, lng);
+                            /*//database instance
                             database = FirebaseDatabase.getInstance();
                             String ides = binding.etphone.getText().toString();
                             reference = database.getReference("donars");
                             reference.child(ides).setValue(donors);
+                            //database end instance*/
 
 
                             Toast.makeText(Donate_Activity.this, "DATA saved", Toast.LENGTH_SHORT).show();
                             //end outside code
+                            binding.btndonate.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
+                                    //database instance
+                                    database = FirebaseDatabase.getInstance();
+                                    String ides = binding.etphone.getText().toString();
+                                    reference = database.getReference("donars");
+                                    reference.child(ides).setValue(donors);
+                                    //database end instance
+
+
+                                    Toast.makeText(Donate_Activity.this, "Donated", Toast.LENGTH_SHORT).show();
+                                    Intent intent = new Intent(Donate_Activity.this, DonateOrRecive_Activity.class);
+                                    startActivity(intent);
+
+                                }
+                            });
 
                         }
 
@@ -125,18 +144,10 @@ public class Donate_Activity extends AppCompatActivity {
 
             }
         });
+//doante button
 
 
-        binding.btndonate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(Donate_Activity.this, "Donated", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(Donate_Activity.this, DonateOrRecive_Activity.class);
-                startActivity(intent);
-
-            }
-        });
-
+//end donate button
     }
     //start
     private void requestPermissio(){
