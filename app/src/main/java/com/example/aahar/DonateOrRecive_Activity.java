@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -130,4 +131,12 @@ public class DonateOrRecive_Activity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+    //off back click
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if(keyCode==KeyEvent.KEYCODE_BACK)
+            Toast.makeText(getApplicationContext(), "Back press disable by me for better ui,Please click top right menu for Log out", Toast.LENGTH_SHORT).show();
+        return false;
+    }
+    //end brace off back click
 }
